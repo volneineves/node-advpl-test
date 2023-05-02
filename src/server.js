@@ -12,6 +12,10 @@ app.post("/test", express.text(), (req, res) => {
   res.send(req.body);
 });
 
+app.get("/", (req, res) => {
+  res.send("Hello World");
+});
+
 app.listen(3000, () => {
   console.log("Servidor iniciado na porta 3000.");
 });
